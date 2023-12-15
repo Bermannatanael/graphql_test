@@ -1,0 +1,10 @@
+FROM mysql:latest
+
+ENV MYSQL_DATABASE=person
+ENV MYSQL_USER=berman
+ENV MYSQL_PASSWORD=admin12345
+ENV MYSQL_ROOT_PASSWORD=root_password
+
+EXPOSE 3306
+
+CMD ["mysqld"]
